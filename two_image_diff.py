@@ -20,8 +20,8 @@ if __name__ == '__main__':
     for delta_x in range(-2, 3):
         for delta_y in range(-2, 3):
             brightness2_shift = copy.deepcopy(brightness2)
-            brightness2_shift = np.roll(brightness2_shift, delta_x, axis=0)
-            brightness2_shift = np.roll(brightness2_shift, delta_y, axis=1)
+            brightness2_shift = np.roll(brightness2_shift, delta_x, axis=1)
+            brightness2_shift = np.roll(brightness2_shift, delta_y, axis=0)
 
             diff_image = brightness1 - brightness2_shift
 
